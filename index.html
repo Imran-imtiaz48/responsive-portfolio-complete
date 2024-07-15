@@ -1,50 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Personal Portfolio | Harris</title>
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- Replace with your CSS file link -->
 
-        <!-- ===== BOX ICONS ===== -->
-        
+    <!-- Box Icons (if needed) -->
+    <link rel="stylesheet" href="https://boxicons.com/css/boxicons.min.css">
 
-        <title>Responsive personal portfolio | Harris</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        
+    <!-- Favicon (optional) -->
+    <link rel="icon" href="favicon.ico">
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            
+    <!-- Fonts (if needed) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-            <!--===== ABOUT =====-->
-            
+</head>
+<body>
 
-            <!--===== SKILLS =====-->
-            
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Harris</a>
 
-            <!--===== EDUCATION =====-->
-            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">Education</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#works" class="nav__link">Works</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <i class='bx bx-menu' id="nav-toggle"></i>
+            </div>
+        </nav>
+    </header>
 
-            <!--===== SERVICES =====-->
-            
+    <!-- MAIN -->
+    <main class="l-main">
+        <!-- HOME -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="#" class="home__social-icon">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="#" class="home__social-icon">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                    </div>
 
-            <!--===== PROJECT IN MIND =====-->
-            
+                    <div class="home__img">
+                        <img src="img/profile.jpg" alt="Harris" class="home__img">
+                    </div>
 
-            <!--===== WORKS =====-->
-            
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm Harris</h1>
+                        <h3 class="home__subtitle">Front-end Developer</h3>
+                        <p class="home__description">Passionate about crafting beautiful web experiences.</p>
+                        <a href="#contact" class="button button--flex">Contact Me <i class="bx bx-chevron-right button__icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!--===== CONTACT =====-->
-            
-        </main>
+        <!-- ABOUT -->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">About Me</h2>
+                    <p class="about__description">I am a front-end developer with a passion for creating responsive and accessible websites.</p>
+                </div>
 
-        <!--===== FOOTER =====-->
-        
-        <!--===== MAIN JS =====-->
-        <script src=""></script>
-    </body>
+                <img src="img/about.jpg" alt="Harris" class="about__img">
+            </div>
+        </section>
+
+        <!-- OTHER SECTIONS -->
+        <!-- Add sections like Skills, Education, Services, Projects, Works, and Contact -->
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <h1 class="footer__title">Harris</h1>
+                <span class="footer__subtitle">Front-end Developer</span>
+            </div>
+
+            <ul class="footer__links">
+                <li><a href="#home" class="footer__link">Home</a></li>
+                <li><a href="#about" class="footer__link">About</a></li>
+                <li><a href="#skills" class="footer__link">Skills</a></li>
+                <li><a href="#education" class="footer__link">Education</a></li>
+                <li><a href="#services" class="footer__link">Services</a></li>
+                <li><a href="#works" class="footer__link">Works</a></li>
+                <li><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
+
+            <div class="footer__socials">
+                <a href="#" class="footer__social">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="#" class="footer__social">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="#" class="footer__social">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MAIN JS -->
+    <script src="main.js"></script> <!-- Replace with your JavaScript file link -->
+</body>
 </html>
